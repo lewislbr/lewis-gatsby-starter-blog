@@ -43,7 +43,7 @@ function Info({ data }) {
     <Layout>
       <SEO
         title="Info"
-        keywords={[`web designer`, `web developer`, `ux`, `ui`]}
+        keywords={[``, ``, ``, ``]}
       />
       <Header />
       <MainHeading>Info</MainHeading>
@@ -51,57 +51,7 @@ function Info({ data }) {
         <Img fluid={data.DSC0011.childImageSharp.fluid} />
       </ImgDiv>
       <BodyText>
-        My name is Lewis Llobera and I am from Mallorca, Spain.
-        <br />
-        <br />
-        Some time ago, while studying business administration (which I dropped
-        out on my last year due to frustration about the university) and in need
-        of a job, I started working in the accounting department of a small
-        company for two years.
-        <br />
-        <br />
-        Not happy with that, I joined a local 4-person startup that was building
-        a gaming-focused search engine, to find games of any type both on the
-        internet and retail stores. I decided to join full-time as a product
-        designer/business developer/whatever-was-needed in order to transform
-        the idea into a business. With desire to expand, people from Spain, the
-        US, the UK and France joined the team, and we reached 14 members. At
-        that time there were no salaries, only equity, and we needed money to
-        put in more hours, so we started looking for investors. Sadly, after a
-        year with no luck and members dropping out as motivation faded and
-        saving were running off, we had to give up the project and learn from
-        the failure (and was a lot).
-        <br />
-        <br />
-        After that venture, I worked at a small real estate agency for two years
-        as an online marketer, photographer and web designer (aka 'the computer
-        guy'). Althoug it was not my desired job situation, I learned a lot on
-        my own about those skills, and focused specially on web design.
-        <br />
-        <br />
-        Following in time, I spinned out of the real estate agency and worked as
-        a freelance architectural photographer in order to have more time to
-        self-study about web design and development and push harder in that
-        direction.
-        <br />
-        <br />
-        Currently, after a year, I am continuing working as a freelance
-        photographer (with clients such as Airbnb itself), and also designing
-        and developing personal and client websites and apps (which you can see{' '}
-        <Alink>
-          <Link to="/works">here</Link>
-        </Alink>
-        ).
-        <br />
-        <br />
-        Topics and technologies I know and continuously learn about include
-        UI/UX design, HTML, CSS, JavaScript, React, Gatsby, styled-components,
-        Git, Firebase...
-        <br />
-        <br />
-        Looking into the future, I am seeking for a UI, UX, or frontend
-        development position, where I can learn, help and grow, while building
-        useful and outstanding web apps.
+        Custom bio or whatever.
       </BodyText>
       <ButtonWrapper>
         <a href="mailto:billobera&#64;gmail.com">

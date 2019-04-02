@@ -83,11 +83,11 @@ const GlobalStyles = createGlobalStyle`
     --sides-padding-desktop: 3%;
     --sides-padding-mobile: 5%;
 
-    --background-color: hsl(0, 0%, 0%);
-    --background-color-translucent: hsla(0, 0%, 0%, 0.92);
-    --primary-color: hsl(150, 3%, 94%);
-    --primary-color-light: hsla(150, 3%, 94%, 0.85);
-    --primary-color-lighter: hsla(150, 3%, 94%, 0.65);
+    --background-color: hsl(0, 0%, 100%);
+    --background-color-translucent: hsla(0, 0%, 100%, 0.92);
+    --primary-color: hsl(150, 3%, 0%);
+    --primary-color-light: hsla(150, 3%, 0%, 0.85);
+    --primary-color-lighter: hsla(150, 3%, 0%, 0.65);
     --secondary-color-a: hsl(351, 100%, 63%);
     --secondary-color-b: hsl(32, 100%, 54%);
     background-color: var(--background-color);
@@ -159,10 +159,8 @@ function Layout({ children }) {
           <Wrapper>
             <Content>{children}</Content>
             <Footer>
-              <LinkOut href="https://mobile.twitter.com/lewislbr">
-                Twitter
-              </LinkOut>
-              <LinkOut href="https://github.com/lewislbr">Github</LinkOut>
+              <LinkOut href="/">Twitter</LinkOut>
+              <LinkOut href="/">Github</LinkOut>
             </Footer>
           </Wrapper>
         </>

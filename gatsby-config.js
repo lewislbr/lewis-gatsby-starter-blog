@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Lewis Llobera`,
-    description: `A designer+developer focused on building functional, beautiful, and perfomant apps.`,
-    author: `@lewislbr`,
-    siteUrl: `https://www.lewisllobera.com`
+    title: `CGST`,
+    description: `A custom gatsby starter template.`,
+    author: `@author`,
+    siteUrl: `https://www.website.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,13 +35,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `custom-gatsby-starter-template`,
+        short_name: `cgst`,
         start_url: `/`,
         background_color: `hsl(0, 0%, 0%)`,
         theme_color: `hsl(189, 100%, 50%)`,
         display: `minimal-ui`,
-        icon: `src/images/okami.png`,
+        icon: `src/images/icon.png`,
       },
     },
     `gatsby-plugin-styled-components`,

@@ -3,12 +3,14 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import ArrowBack from '../images/arrow-back.svg';
+import Nav from '../components/Nav';
 
 const Bar = styled.header`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   position: fixed;
   left: auto;
   right: auto;
@@ -39,6 +41,7 @@ function Header() {
           <img src={ArrowBack} />
         </Icon>
       </Link>
+      <Nav />
     </Bar>
   );
 }

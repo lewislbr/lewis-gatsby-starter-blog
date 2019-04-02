@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 const NavIcon = styled.label`
-  height: 75%;
+  height: 58%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,11 +148,11 @@ function Nav() {
         <Link to="/" activeStyle={NavLinkActive}>
           <NavLink>Home</NavLink>
         </Link>
-        <Link to="/" activeStyle={NavLinkActive}>
-          <NavLink>Blog</NavLink>
+        <Link to="/Info" activeStyle={NavLinkActive}>
+          <NavLink>Info</NavLink>
         </Link>
-        <Link to="/" activeStyle={NavLinkActive}>
-          <NavLink>Contact</NavLink>
+        <Link to="/Blog" activeStyle={NavLinkActive}>
+          <NavLink>Blog</NavLink>
         </Link>
       </NavModal>
     </>
