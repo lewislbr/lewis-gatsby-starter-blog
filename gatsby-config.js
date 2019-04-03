@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `CGST`,
+    title: `Custom Gatsby Starter Template`,
     description: `A custom gatsby starter template.`,
     author: `@author`,
     siteUrl: `https://www.website.com`
@@ -28,15 +28,15 @@ module.exports = {
       resolve: `gatsby-plugin-sharp`,
       options: {
         useMozJpeg: true,
-        stripMetadata: false,
-        defaultQuality: 75,
+        stripMetadata: true,
+        defaultQuality: 50,
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `custom-gatsby-starter-template`,
-        short_name: `cgst`,
+        short_name: `CGST`,
         start_url: `/`,
         background_color: `hsl(0, 0%, 0%)`,
         theme_color: `hsl(189, 100%, 50%)`,
