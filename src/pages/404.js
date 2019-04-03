@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import SEO from '../components/Seo';
 
 import MainHeading from '../elements/MainHeading';
 import BodyText from '../elements/BodyText';
@@ -28,7 +28,7 @@ function NotFoundPage() {
       <Wrapper>
         <MainHeading>NOT FOUND</MainHeading>
         <BodyText>
-          This page doesn&#39;t exist...  😓.
+          This page doesn&#39;t exist :/
         </BodyText>
         <Link to="/">
           <ButtonCentered>Go home</ButtonCentered>

@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
-import Header from '../components/Header';
 import MainHeading from '../elements/MainHeading';
 import BodyText from '../elements/BodyText';
 import DateText from '../elements/DateText';
@@ -12,7 +11,6 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <Header />
       <MainHeading>{post.frontmatter.title}</MainHeading>
       <DateText>{post.frontmatter.date}</DateText>
       <BodyText dangerouslySetInnerHTML={{ __html: post.html }} />

@@ -1,4 +1,4 @@
-import NG400 from './NG400.woff2';
-import NG700 from './NG700.woff2';
+import IBMPlexMono400 from './IBMPlexMono400.woff2';
+import IBMPlexMono700 from './IBMPlexMono700.woff2';
 
-export { NG400, NG700 };
+export { IBMPlexMono400, IBMPlexMono700 };

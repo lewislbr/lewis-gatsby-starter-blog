@@ -43,13 +43,13 @@ export default styled.div`
     -webkit-box-shadow 342ms cubic-bezier(0.23, 1, 0.32, 1);
 
   :hover {
-    -webkit-box-shadow: 0px 9px 0 0 hsla(0, 0%, 94%, 1);
-    box-shadow: 0px 9px 0 0 hsla(0, 0%, 94%, 1);
+    -webkit-box-shadow: 0px 9px 0 0 var(--primary-color);
+    box-shadow: 0px 9px 0 0 var(--primary-color);
   }
 
   :active {
-    -webkit-box-shadow: 0px 9px 0 0 hsla(0, 0%, 94%, 1);
-    box-shadow: 0px 9px 0 0 hsla(0, 0%, 94%, 1);
+    -webkit-box-shadow: 0px 9px 0 0 var(--primary-color);
+    box-shadow: 0px 9px 0 0 var(--primary-color);
   }
 
   @media (max-width: 849px) {

@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-
-import Header from '../components/Header';
+import SEO from '../components/Seo';
+import HeaderBack from '../components/HeaderBack';
 import MainHeading from '../elements/MainHeading';
 import BodyText from '../elements/BodyText';
 import Button from '../elements/Button';
@@ -18,12 +17,6 @@ const ImgDiv = styled.div`
   @media (max-width: 849px) {
     width: 100%;
   }
-`;
-
-const Alink = styled.p`
-  display: inline-block;
-  text-decoration: underline;
-  margin: 0;
 `;
 
 const ButtonWrapper = styled.div`
@@ -40,25 +33,25 @@ const ButtonWrapper = styled.div`
 
 function Info({ data }) {
   return (
-    <Layout>
-      <SEO
-        title="Info"
-        keywords={[``, ``, ``, ``]}
-      />
-      <Header />
-      <MainHeading>Info</MainHeading>
-      <ImgDiv>
-        <Img fluid={data.DSC0011.childImageSharp.fluid} />
-      </ImgDiv>
-      <BodyText>
-        Custom bio or whatever.
-      </BodyText>
-      <ButtonWrapper>
-        <a href="mailto:billobera&#64;gmail.com">
-          <Button>Get in touch</Button>
-        </a>
-      </ButtonWrapper>
-    </Layout>
+    <>
+      <HeaderBack />
+      <Layout>
+        <SEO
+          title="Info"
+          keywords={[`keyword`, `keyword`, `keyword`, `keyword`]}
+        />
+        <MainHeading>Info</MainHeading>
+        <ImgDiv>
+          <Img fluid={data.RandomPhoto.childImageSharp.fluid} />
+        </ImgDiv>
+        <BodyText>Custom bio or whatever.</BodyText>
+        <ButtonWrapper>
+          <a href="mailto:billobera&#64;gmail.com">
+            <Button>Get in touch</Button>
+          </a>
+        </ButtonWrapper>
+      </Layout>
+    </>
   );
 }
 
@@ -66,7 +59,7 @@ export default Info;
 
 export const query = graphql`
   query {
-    DSC0011: file(relativePath: { eq: "DSC0011.jpg" }) {
+    RandomPhoto: file(relativePath: { eq: "RandomPhoto.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1400) {
           ...GatsbyImageSharpFluid_withWebp

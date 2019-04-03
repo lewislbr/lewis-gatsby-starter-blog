@@ -1,25 +1,28 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import SEO from '../components/Seo';
 
-import Header from '../components/header'
+import HeaderNav from '../components/HeaderNav';
 import MainHeading from '../elements/MainHeading';
-import BodyText from '../elements/BodyText'
+import BodyText from '../elements/BodyText';
 
 function Home() {
   return (
-    <Layout>
-      <SEO
-        title="Home"
-        keywords={[``, ``, ``, ``]}
-      />
-      <Header />
-      <MainHeading>CGST</MainHeading>
-      <BodyText>This is a custom gatsby starter template.</BodyText>
-    </Layout>
+    <>
+      <HeaderNav />
+      <Layout>
+        <SEO
+          title="Home"
+          keywords={[`keyword`, `keyword`, `keyword`, `keyword`]}
+        />
+        <MainHeading>CGST</MainHeading>
+        <BodyText>
+          This is a custom gatsby starter template. It is styled with
+          styled-components.
+        </BodyText>
+      </Layout>
+    </>
   );
 }
 

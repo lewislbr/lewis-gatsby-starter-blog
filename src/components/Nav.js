@@ -42,10 +42,6 @@ const NavIconLine = styled.span`
   transform: rotate(0deg);
   -webkit-transition: 0.15s ease-in-out;
   transition: 0.15s ease-in-out;
-
-  @media (max-width: 849px) {
-    height: 2px;
-  }
 `;
 
 const NavIconLine1 = styled(NavIconLine)`
@@ -148,10 +144,10 @@ function Nav() {
         <Link to="/" activeStyle={NavLinkActive}>
           <NavLink>Home</NavLink>
         </Link>
-        <Link to="/Info" activeStyle={NavLinkActive}>
+        <Link to="/info" activeStyle={NavLinkActive}>
           <NavLink>Info</NavLink>
         </Link>
-        <Link to="/Blog" activeStyle={NavLinkActive}>
+        <Link to="/blog" activeStyle={NavLinkActive}>
           <NavLink>Blog</NavLink>
         </Link>
       </NavModal>

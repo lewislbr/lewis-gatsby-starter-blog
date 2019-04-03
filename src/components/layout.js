@@ -62,16 +62,16 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @font-face {
-    font-family: "NG";
-    src: local('NG400'), url('${font.NG400}') format("woff2");
+    font-family: "IBMPlexMono";
+    src: local('IBMPlexMono400'), url('${font.IBMPlexMono400}') format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: block;
   }
 
   @font-face {
-    font-family: "NG";
-    src: local('NG700'), url('${font.NG700}') format("woff2");
+    font-family: "IBMPlexMono";
+    src: local('IBMPlexMono700'), url('${font.IBMPlexMono700}') format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: block;
@@ -91,7 +91,7 @@ const GlobalStyles = createGlobalStyle`
     --secondary-color-a: hsl(351, 100%, 63%);
     --secondary-color-b: hsl(32, 100%, 54%);
     background-color: var(--background-color);
-    font-family: 'NG', sans-serif;
+    font-family: 'IBMPlexMono', sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: var(--primary-color);

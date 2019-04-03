@@ -3,9 +3,8 @@ import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-
-import Header from '../components/Header';
+import SEO from '../components/Seo';
+import HeaderBack from '../components/HeaderBack';
 import MainHeading from '../elements/MainHeading';
 import SecondaryHeading from '../elements/SecondaryHeading';
 import BodyText from '../elements/BodyText';
@@ -23,23 +22,25 @@ const Post = styled.div`
 
 function Blog({ data }) {
   return (
-    <Layout>
-      <SEO
-        title="Blog"
-        keywords={[`web designer`, `web developer`, `ux`, `ui`]}
-      />
-      <Header />
-      <MainHeading>Blog</MainHeading>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <Link to={node.fields.slug}>
-          <Post key={node.id}>
-            <SecondaryHeading>{node.frontmatter.title}</SecondaryHeading>
-            <BodyText>{node.excerpt}</BodyText>
-            <DateText>{node.frontmatter.date}</DateText>
-          </Post>
-        </Link>
-      ))}
-    </Layout>
+    <>
+      <HeaderBack />
+      <Layout>
+        <SEO
+          title="Blog"
+          keywords={[`keyword`, `keyword`, `keyword`, `keyword`]}
+        />
+        <MainHeading>Blog</MainHeading>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <Link to={node.fields.slug}>
+            <Post key={node.id}>
+              <SecondaryHeading>{node.frontmatter.title}</SecondaryHeading>
+              <BodyText>{node.excerpt}</BodyText>
+              <DateText>{node.frontmatter.date}</DateText>
+            </Post>
+          </Link>
+        ))}
+      </Layout>
+    </>
   );
 }
 
