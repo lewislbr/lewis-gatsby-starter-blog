@@ -16,10 +16,10 @@ function Home() {
           title="Home"
           keywords={[`keyword`, `keyword`, `keyword`, `keyword`]}
         />
-        <MainHeading>CGST</MainHeading>
+        <MainHeading>Custom Gatsby Starter Template</MainHeading>
         <BodyText>
           This is a custom gatsby starter template. It is styled with
-          styled-components.
+          styled-components and it has a blog.
         </BodyText>
       </Layout>
     </>

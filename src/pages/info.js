@@ -11,7 +11,7 @@ import BodyText from '../elements/BodyText';
 import Button from '../elements/Button';
 
 const ImgDiv = styled.div`
-  width: 50%;
+  width: 100%;
   margin: 0 auto 5vh auto;
 
   @media (max-width: 849px) {
@@ -46,7 +46,7 @@ function Info({ data }) {
         </ImgDiv>
         <BodyText>Custom bio or whatever.</BodyText>
         <ButtonWrapper>
-          <a href="mailto:billobera&#64;gmail.com">
+          <a href="mailto:your&#64;email.com">
             <Button>Get in touch</Button>
           </a>
         </ButtonWrapper>

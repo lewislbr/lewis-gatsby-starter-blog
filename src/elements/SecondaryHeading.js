@@ -4,4 +4,5 @@ export default styled.h2`
   display: block;
   font-size: 7vmin;
   margin-bottom: 2.5vh;
+  letter-spacing: -3px;
   `;

@@ -12,7 +12,6 @@ import DateText from '../elements/DateText';
 
 const Post = styled.div`
   border-bottom: 1px solid lightgray;
-  margin-left: 15vw;
   margin-bottom: 50px;
 
   @media (max-width: 849px) {

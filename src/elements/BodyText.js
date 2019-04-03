@@ -4,9 +4,11 @@ export default styled.p`
   display: block;
   max-width: 45em;
   line-height: 1.5;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5vh;
+  margin: 0 0 5vh 5%;
 
   color: var(--primary-color-light);
+
+  @media (max-width: 849px) {
+    margin: 0 0 5vh 0;
+  }
 `;

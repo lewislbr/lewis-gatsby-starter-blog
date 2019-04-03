@@ -78,7 +78,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    padding-top: 12vh;
+    padding-top: 15vh;
     line-height: 1;
     --sides-padding-desktop: 3%;
     --sides-padding-mobile: 5%;
@@ -117,6 +117,7 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.main`
+  max-width: 1000px;
   margin: 0 auto;
 
   @media (max-width: 849px) {
