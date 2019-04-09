@@ -8,7 +8,7 @@ export default styled.header`
   left: auto;
   right: auto;
   z-index: 999;
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   padding: 0 var(--sides-padding-desktop);
   top: 0px;

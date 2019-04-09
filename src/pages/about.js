@@ -11,7 +11,7 @@ import BodyText from '../elements/BodyText';
 import Button from '../elements/Button';
 
 const ImgDiv = styled.div`
-  width: 100%;
+  width: 45em;
   margin: 0 auto 5vh auto;
 
   @media (max-width: 849px) {

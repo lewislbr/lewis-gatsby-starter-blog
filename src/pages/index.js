@@ -17,7 +17,6 @@ const Hero = styled.div`
 const Post = styled.div`
   border-bottom: 1px solid lightgray;
   margin-bottom: 50px;
-  padding-left: 5%;
 
   @media (max-width: 849px) {
     padding-left: 0;
