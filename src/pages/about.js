@@ -36,8 +36,8 @@ function Info({ data }) {
     <>
       <HeaderBack />
       <Layout>
-        <SEO title="Info" />
-        <MainHeading>Info</MainHeading>
+        <SEO title="About" />
+        <MainHeading>About</MainHeading>
         <ImgDiv>
           <Img fluid={data.RandomPhoto.childImageSharp.fluid} />
         </ImgDiv>
