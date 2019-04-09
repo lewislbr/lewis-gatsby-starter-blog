@@ -5,8 +5,9 @@ export default styled.h1`
   margin: 0 auto 5vh auto;
   max-width: 25em;
   font-size: 60px;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -3px;
+  padding: 0 0 10px 0;
 
   background: -webkit-linear-gradient(
     240deg,

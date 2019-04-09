@@ -92,7 +92,7 @@ const GlobalStyles = createGlobalStyle`
     --secondary-color-b: hsl(32, 100%, 54%);
     background-color: var(--background-color);
     font-family: 'IBMPlexMono', sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 400;
     color: var(--primary-color);
 
@@ -117,7 +117,7 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.main`
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 
   @media (max-width: 849px) {

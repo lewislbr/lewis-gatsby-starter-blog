@@ -11,10 +11,10 @@ import BodyText from '../elements/BodyText';
 import DateText from '../elements/DateText';
 
 const Hero = styled.div`
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
 
   @media (max-width: 849px) {
-    margin-bottom: 15vh;
+    margin-bottom: 10vh;
   }
 `;
 
@@ -67,7 +67,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
           }
           fields {
             slug
