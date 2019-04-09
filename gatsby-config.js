@@ -22,7 +22,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-catch-links`,
-    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,
@@ -30,6 +29,21 @@ module.exports = {
         useMozJpeg: true,
         stripMetadata: true,
         defaultQuality: 50,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+              quality: 50,
+              withWebp: true,
+            },
+          },
+        ],
       },
     },
     {
