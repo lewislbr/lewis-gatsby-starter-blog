@@ -11,11 +11,10 @@ import BodyText from '../elements/BodyText';
 import Button from '../elements/Button';
 
 const ImgDiv = styled.div`
-  width: 100%;
-  margin: 0 auto 5vh auto;
+  margin: 0 5% 5vh 5%;
 
   @media (max-width: 849px) {
-    width: 100%;
+    margin: 0 0 5vh 0;
   }
 `;
 
