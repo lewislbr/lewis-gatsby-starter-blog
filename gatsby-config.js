@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Custom Gatsby Starter Template`,
-    description: `A custom gatsby starter template.`,
+    title: `Lewis Gatsby Starter Blog`,
+    description: `A Lewis gatsby starter Blog.`,
     author: `@author`,
     siteUrl: `https://www.website.com`
   },
@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `custom-gatsby-starter-template`,
+        name: `Lewis-gatsby-starter-Blog`,
         short_name: `CGST`,
         start_url: `/`,
         background_color: `#ffffff`,

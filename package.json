@@ -1,7 +1,7 @@
 {
-  "name": "custom-gatsby-starter-template",
+  "name": "lewis-gatsby-starter-blog",
   "private": true,
-  "description": "A custom Gatsby starter template used to start a new project.",
+  "description": "A custom Gatsby starter template to start a new blog or personal website.",
   "version": "0.1.0",
   "author": "Lewis Llobera <billobera@gmail.com>",
   "dependencies": {
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lewislbr/custom-gatsby-starter-template"
+    "url": "https://github.com/lewislbr/lewis-gatsby-starter-blog"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
