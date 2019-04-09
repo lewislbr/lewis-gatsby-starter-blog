@@ -1,8 +1,8 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import FixedBar from '../elements/FixedBar';
-import Nav from './Nav';
 
 const HeaderNavBar = styled(FixedBar)`
   justify-content: space-between;
@@ -21,7 +21,9 @@ function Header() {
   return (
     <HeaderNavBar>
       <Logo>Your Name</Logo>
-      <Nav />
+      <Link to="/about">
+        <p>About</p>
+      </Link>
     </HeaderNavBar>
   );
 }
