@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import FixedBar from '../elements/FixedBar';
 
-const HeaderNavBar = styled(FixedBar)`
+const HeaderLogo = styled(FixedBar)`
   justify-content: space-between;
 `;
 
@@ -13,18 +13,18 @@ const Logo = styled.p`
   font-weight: 700;
 
   @media (max-width: 849px) {
-    font-size: 30px;
+    font-size: 28px;
   }
 `;
 
 function Header() {
   return (
-    <HeaderNavBar>
+    <HeaderLogo>
       <Logo>Your Name</Logo>
       <Link to="/about">
         <p>About</p>
       </Link>
-    </HeaderNavBar>
+    </HeaderLogo>
   );
 }
 
