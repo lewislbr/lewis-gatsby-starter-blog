@@ -42,7 +42,6 @@ module.exports = {
               quality: 75,
               withWebp: true,
               linkImagesToOriginal: false,
-              wrapperStyle: 'margin: 0 -5%;',
             },
           },
         ],
