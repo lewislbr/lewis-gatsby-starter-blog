@@ -14,8 +14,8 @@ export default styled.header`
   top: 0px;
 
   background-color: var(--background-color-translucent);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2.5px);
+  backdrop-filter: blur(2.5px);
 
   @media (max-width: 849px) {
     padding: 0 var(--sides-padding-mobile);

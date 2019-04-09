@@ -97,7 +97,7 @@ const GlobalStyles = createGlobalStyle`
     color: var(--primary-color);
 
     @media (max-width: 849px) {
-      font-size: 19px;
+      font-size: 17px;
     }
   }
 

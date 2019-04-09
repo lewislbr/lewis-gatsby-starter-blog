@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
-import Header from '../components/Header';
+import HeaderLogo from '../components/HeaderLogo';
 import MainHeading from '../elements/MainHeading';
 import SecondaryHeading from '../elements/SecondaryHeading';
 import BodyText from '../elements/BodyText';
@@ -12,6 +12,10 @@ import DateText from '../elements/DateText';
 
 const Hero = styled.div`
   margin-bottom: 20vh;
+
+  @media (max-width: 849px) {
+    margin-bottom: 15vh;
+  }
 `;
 
 const Post = styled.div`
@@ -26,7 +30,7 @@ const Post = styled.div`
 function Blog({ data }) {
   return (
     <>
-      <Header />
+      <HeaderLogo />
       <Layout>
         <SEO title="Blog" />
         <Hero>
@@ -35,8 +39,8 @@ function Blog({ data }) {
             This is a custom gatsby starter template. Features:
             <ul>
               <li>CSS in JS with styled-components</li>
-              <li>Automatically creates blog pages from Markdown</li>
-              <li>Gatsby-image</li>
+              <li>Automatically creates blog pages from Markdown files</li>
+              <li>Optimized images</li>
               <li>PWA by default</li>
             </ul>
           </BodyText>

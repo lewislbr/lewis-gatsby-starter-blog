@@ -4,7 +4,7 @@ export default styled.h1`
   display: block;
   margin: 0 auto 5vh auto;
   max-width: 25em;
-  font-size: 9vmin;
+  font-size: 60px;
   line-height: 1.2;
   letter-spacing: -3px;
 
@@ -18,4 +18,8 @@ export default styled.h1`
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 849px) {
+    font-size: 45px;
+  }
 `;

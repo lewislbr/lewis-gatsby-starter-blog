@@ -2,7 +2,11 @@ import styled from 'styled-components';
 
 export default styled.h2`
   display: block;
-  font-size: 7vmin;
+  font-size: 40px;
   margin-bottom: 2.5vh;
-  letter-spacing: -3px;
+  letter-spacing: -1.5px;
+
+  @media (max-width: 849px) {
+    font-size: 30px;
+  }
   `;

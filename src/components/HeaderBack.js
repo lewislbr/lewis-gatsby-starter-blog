@@ -7,12 +7,12 @@ import ArrowBack from '../images/arrow-back.svg';
 
 
 const Icon = styled.div`
-  height: 36px;
-  width: 36px;
+  height: 34px;
+  width: 34px;
 
   @media (max-width: 849px) {
-    height: 30px;
-    width: 30px;
+    height: 28px;
+    width: 28px;
   }
 `;
 
