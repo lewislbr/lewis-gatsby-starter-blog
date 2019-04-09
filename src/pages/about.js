@@ -38,7 +38,6 @@ function Info({ data }) {
       <Layout>
         <SEO
           title="Info"
-          keywords={[`keyword`, `keyword`, `keyword`, `keyword`]}
         />
         <MainHeading>Info</MainHeading>
         <ImgDiv>
