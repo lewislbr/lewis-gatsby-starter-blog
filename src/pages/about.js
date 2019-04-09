@@ -21,7 +21,6 @@ const ImgDiv = styled.div`
 
 const ButtonWrapper = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: center;
   width: 100%;
   margin-top: 10vh;
