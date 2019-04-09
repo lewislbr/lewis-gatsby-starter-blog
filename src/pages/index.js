@@ -21,10 +21,9 @@ function Home() {
           This is a custom gatsby starter template. Features:
           <ul>
             <li>CSS in JS with styled-components</li>
-            <li>Blog (can be removed)</li>
             <li>Automatically creates blog pages from Markdown</li>
-            <li>PWA by default</li>
             <li>Gatsby-image</li>
+            <li>PWA by default</li>
           </ul>
         </BodyText>
       </Layout>
