@@ -36,7 +36,7 @@ function Blog({ data }) {
         <Hero>
           <MainHeading>Lewis Gatsby Starter Blog</MainHeading>
           <BodyText>
-            This is a custom gatsby starter template. Features:
+            This is a custom Gatsby starter template to start a new blog or personal website. Features:
             <ul>
               <li>CSS in JS with styled-components</li>
               <li>Automatically creates blog pages from Markdown files</li>
