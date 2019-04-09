@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Lewis Gatsby Starter Blog`,
-    description: `A Lewis gatsby starter Blog.`,
+    description: `A custom Gatsby starter template to start a new blog or personal website.`,
     author: `@author`,
-    siteUrl: `https://www.website.com`
+    siteUrl: `https://lewis-gatsby-starter-blog.firebaseapp.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Lewis-gatsby-starter-Blog`,
-        short_name: `CGST`,
+        name: `Lewis Gatsby Starter Blog`,
+        short_name: `Lewis Gatsby Starter Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
@@ -46,4 +46,4 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
   ],
-}
+};
