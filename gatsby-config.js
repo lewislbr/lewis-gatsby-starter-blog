@@ -41,6 +41,8 @@ module.exports = {
               maxWidth: 900,
               quality: 50,
               withWebp: true,
+              linkImagesToOriginal: false,
+              wrapperStyle: `margin: 0 -5%`,
             },
           },
         ],
