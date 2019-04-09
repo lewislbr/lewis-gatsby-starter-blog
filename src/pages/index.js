@@ -14,7 +14,6 @@ function Home() {
       <Layout>
         <SEO
           title="Home"
-          keywords={[`keyword`, `keyword`, `keyword`, `keyword`]}
         />
         <MainHeading>Lewis Gatsby Starter Blog</MainHeading>
         <BodyText>
