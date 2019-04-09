@@ -16,7 +16,7 @@ function Home() {
           title="Home"
           keywords={[`keyword`, `keyword`, `keyword`, `keyword`]}
         />
-        <MainHeading>Custom Gatsby Starter Template</MainHeading>
+        <MainHeading>Lewis Gatsby Starter Blog</MainHeading>
         <BodyText>
           This is a custom gatsby starter template. Features:
           <ul>
@@ -24,9 +24,7 @@ function Home() {
             <li>Blog (can be removed)</li>
             <li>Automatically creates blog pages from Markdown</li>
             <li>PWA by default</li>
-            <li>Two different headers</li>
             <li>Gatsby-image</li>
-            <li>Auto-generated robots.txt</li>
           </ul>
         </BodyText>
       </Layout>
