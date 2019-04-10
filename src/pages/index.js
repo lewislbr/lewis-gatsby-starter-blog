@@ -42,6 +42,7 @@ function Blog({ data }) {
               <li>Automatically creates blog pages from Markdown files</li>
               <li>Optimized images</li>
               <li>PWA by default</li>
+              <li>Auto-generated sitemap</li>
             </ul>
           </BodyText>
         </Hero>
