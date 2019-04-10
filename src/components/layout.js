@@ -81,9 +81,9 @@ const GlobalStyles = createGlobalStyle`
 
     --background-color: hsl(0, 0%, 100%);
     --background-color-translucent: hsla(0, 0%, 100%, 0.92);
-    --primary-color: hsl(0, 0%, 0%);
-    --primary-color-light: hsla(0, 0%, 0%, 0.85);
-    --primary-color-lighter: hsla(00, 0%, 0%, 0.65);
+    --primary-color: hsl(0, 0%, 5%);
+    --primary-color-light: hsla(0, 0%, 5%, 0.85);
+    --primary-color-lighter: hsla(00, 0%, 5%, 0.65);
     --secondary-color-a: hsl(351, 100%, 63%);
     background-color: var(--background-color);
     font-family: 'IBMPlexMono', sans-serif;
