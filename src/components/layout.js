@@ -57,10 +57,6 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
   }
 
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
   @font-face {
     font-family: "IBMPlexMono";
     src: local('IBMPlexMono400'), url('${font.IBMPlexMono400}') format("woff2");
