@@ -85,7 +85,6 @@ const GlobalStyles = createGlobalStyle`
     --primary-color-light: hsla(0, 0%, 0%, 0.85);
     --primary-color-lighter: hsla(00, 0%, 0%, 0.65);
     --secondary-color-a: hsl(351, 100%, 63%);
-    --secondary-color-b: hsl(32, 100%, 54%);
     background-color: var(--background-color);
     font-family: 'IBMPlexMono', sans-serif;
     font-size: 19px;
@@ -95,10 +94,6 @@ const GlobalStyles = createGlobalStyle`
     @media (max-width: 849px) {
       font-size: 17px;
     }
-  }
-
-  body.noscroll {
-    overflow: hidden;
   }
 `;
 
