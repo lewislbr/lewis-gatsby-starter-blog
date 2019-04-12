@@ -23,18 +23,23 @@ const ButtonCentered = styled(Button)`
 
 function NotFoundPage() {
   return (
-    <Layout>
+    <>
       <SEO title="404: Not found" />
-      <Wrapper>
-        <MainHeading>NOT FOUND</MainHeading>
-        <BodyText>
-          This page doesn&#39;t exist :/
-        </BodyText>
-        <Link to="/">
-          <ButtonCentered>Go home</ButtonCentered>
-        </Link>
-      </Wrapper>
-    </Layout>
+      <Layout>
+        <Wrapper>
+          <MainHeading>NOT FOUND</MainHeading>
+          <BodyText style={{ textAlign: 'center' }}>
+            This page doesn&#39;t exist{' '}
+            <span role="img" aria-label="duh">
+              😓
+            </span>
+          </BodyText>
+          <Link to="/">
+            <ButtonCentered>Go home</ButtonCentered>
+          </Link>
+        </Wrapper>
+      </Layout>
+    </>
   );
 }
 
