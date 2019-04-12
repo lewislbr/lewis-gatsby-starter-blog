@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import BodyText from '../elements/BodyText';
+import TextBody from './TextBody';
 
-export default styled(BodyText)`
+export default styled(TextBody)`
   font-size: 16px;
   color: var(--primary-color-lighter);
 

@@ -5,17 +5,17 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import HeaderLogo from '../components/HeaderLogo';
-import MainHeading from '../elements/MainHeading';
 
-import SecondaryHeading from '../elements/SecondaryHeading';
-import BodyText from '../elements/BodyText';
-import DateText from '../elements/DateText';
+import HeadingPrimary from '../elements/HeadingPrimary';
+import HeadingSecondary from '../elements/HeadingSecondary';
+import TextBody from '../elements/TextBody';
+import TextDate from '../elements/TextDate';
 
 const Hero = styled.div`
-  margin-bottom: 15vh;
+  margin-bottom: 20vh;
 
   @media (max-width: 849px) {
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
   }
 `;
 
@@ -35,18 +35,18 @@ function Blog({ data }) {
       <HeaderLogo />
       <Layout>
         <Hero>
-          <MainHeading>Lewis Gatsby Starter Blog</MainHeading>
-          <BodyText>
+          <HeadingPrimary>Lewis Gatsby Starter Blog</HeadingPrimary>
+          <TextBody>
             This is a custom Gatsby starter template to start a new blog or
             personal website.
-          </BodyText>
+          </TextBody>
         </Hero>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <Link to={node.fields.slug}>
             <Post key={node.id}>
-              <SecondaryHeading>{node.frontmatter.title}</SecondaryHeading>
-              <BodyText>{node.excerpt}</BodyText>
-              <DateText>{node.frontmatter.date}</DateText>
+              <HeadingSecondary>{node.frontmatter.title}</HeadingSecondary>
+              <TextBody>{node.excerpt}</TextBody>
+              <TextDate>{node.frontmatter.date}</TextDate>
             </Post>
           </Link>
         ))}

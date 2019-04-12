@@ -7,8 +7,8 @@ import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import HeaderBack from '../components/HeaderBack';
 
-import MainHeading from '../elements/MainHeading';
-import BodyText from '../elements/BodyText';
+import HeadingPrimary from '../elements/HeadingPrimary';
+import TextBody from '../elements/TextBody';
 import Button from '../elements/Button';
 
 const ImgDiv = styled.div`
@@ -36,11 +36,11 @@ function Info({ data }) {
       <SEO title="About" />
       <HeaderBack />
       <Layout>
-        <MainHeading>About</MainHeading>
+        <HeadingPrimary>About</HeadingPrimary>
         <ImgDiv>
           <Img fluid={data.RandomPhoto.childImageSharp.fluid} />
         </ImgDiv>
-        <BodyText>
+        <TextBody>
           Building mr concerns servants in he outlived am breeding. He so lain
           good miss when sell some at if. Told hand so an rich gave next. How
           doubt yet again see son smart. While mirth large of on front. Ye he
@@ -54,7 +54,7 @@ function Info({ data }) {
           bed whence. Delivered ye sportsmen zealously arranging frankness
           estimable as. Nay any article enabled musical shyness yet sixteen yet
           blushes. Entire its the did figure wonder off.
-        </BodyText>
+        </TextBody>
         <ButtonWrapper>
           <a href="mailto:your&#64;email.com">
             <Button>Get in touch</Button>
