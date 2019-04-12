@@ -1,6 +1,9 @@
+
 <h1 align="center">
   Lewis Gatsby Starter Blog
 </h1>
+
+
 
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
@@ -13,7 +16,7 @@ Kick off your project with this blog boilerplate. This starter ships with the ma
 
     ```sh
     # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/gatsbyjs/gatsby-starter-blog
+    gatsby new my-blog https://github.com/lewislbr/lewis-gatsby-starter-blog
     ```
 
 1.  **Start developing.**
@@ -21,7 +24,7 @@ Kick off your project with this blog boilerplate. This starter ships with the ma
     Navigate into your new site’s directory and start it up.
 
     ```sh
-    cd my-blog-starter/
+    cd my-blog/
     gatsby develop
     ```
 
@@ -31,7 +34,7 @@ Kick off your project with this blog boilerplate. This starter ships with the ma
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `my-blog` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
@@ -68,6 +71,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 9. **`README.md`**: A text file containing useful reference information about your project.
 
 10. **`yarn.lock`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+
 
 ## 🎓 Learning Gatsby
 
