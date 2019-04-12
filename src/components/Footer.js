@@ -19,8 +19,8 @@ const FooterContainer = styled.footer`
 function Footer() {
   return (
     <FooterContainer>
-      <LinkStd href="/">Twitter</LinkStd>
-      <LinkStd href="/">Github</LinkStd>
+      <LinkStd href="https://mobile.twitter.com/lewislbr">Twitter</LinkStd>
+      <LinkStd href="https://github.com/lewislbr/lewis-gatsby-starter-blog">Github</LinkStd>
     </FooterContainer>
   );
 }
