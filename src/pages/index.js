@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import HeaderLogo from '../components/HeaderLogo';
 import MainHeading from '../elements/MainHeading';
+
 import SecondaryHeading from '../elements/SecondaryHeading';
 import BodyText from '../elements/BodyText';
 import DateText from '../elements/DateText';
@@ -30,19 +31,20 @@ const Post = styled.div`
 function Blog({ data }) {
   return (
     <>
+      <SEO title="Blog" />
       <HeaderLogo />
       <Layout>
-        <SEO title="Blog" />
         <Hero>
           <MainHeading>Lewis Gatsby Starter Blog</MainHeading>
           <BodyText>
-            This is a custom Gatsby starter template to start a new blog or personal website. Features:
+            This is a custom Gatsby starter template to start a new blog or
+            personal website. Features:
             <ul>
               <li>CSS in JS with styled-components</li>
               <li>Automatically creates blog pages from Markdown files</li>
               <li>Optimized images</li>
               <li>PWA by default</li>
-              <li>Auto-generated sitemap</li>
+              <li>Auto-generated sitemap and robots.txt</li>
             </ul>
           </BodyText>
         </Hero>

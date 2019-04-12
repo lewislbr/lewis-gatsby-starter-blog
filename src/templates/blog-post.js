@@ -3,6 +3,8 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import HeaderBack from '../components/HeaderBack';
+import SEO from '../components/Seo';
+
 import MainHeading from '../elements/MainHeading';
 import BodyText from '../elements/BodyText';
 import DateText from '../elements/DateText';
@@ -12,6 +14,7 @@ export default ({ data }) => {
 
   return (
     <>
+      <SEO title={post.frontmatter.title} />
       <HeaderBack />
       <Layout>
         <MainHeading>{post.frontmatter.title}</MainHeading>

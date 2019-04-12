@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import HeaderBack from '../components/HeaderBack';
+
 import MainHeading from '../elements/MainHeading';
 import BodyText from '../elements/BodyText';
 import Button from '../elements/Button';
@@ -32,9 +33,9 @@ const ButtonWrapper = styled.div`
 function Info({ data }) {
   return (
     <>
+      <SEO title="About" />
       <HeaderBack />
       <Layout>
-        <SEO title="About" />
         <MainHeading>About</MainHeading>
         <ImgDiv>
           <Img fluid={data.RandomPhoto.childImageSharp.fluid} />
