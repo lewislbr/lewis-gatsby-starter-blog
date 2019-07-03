@@ -1,9 +1,5 @@
 {
-  "name": "lewis-gatsby-starter-blog",
   "private": true,
-  "description": "A custom Gatsby starter template to start a new blog or personal website.",
-  "version": "0.1.0",
-  "author": "Lewis Llobera <billobera@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.1",
     "gatsby": "^2.10.0",
@@ -46,6 +42,6 @@
     "url": "https://github.com/lewislbr/lewis-gatsby-starter-blog"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/lewislbr/lewis-gatsby-starter-blog/issues"
   }
 }
