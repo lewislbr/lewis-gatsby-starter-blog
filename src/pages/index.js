@@ -2,14 +2,15 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Layout from '../components/Layout';
-import SEO from '../components/Seo';
-import HeaderLogo from '../components/HeaderLogo';
-
-import HeadingPrimary from '../elements/HeadingPrimary';
-import HeadingSecondary from '../elements/HeadingSecondary';
-import TextBody from '../elements/TextBody';
-import TextDate from '../elements/TextDate';
+import {
+  HeaderLogo,
+  HeadingPrimary,
+  HeadingSecondary,
+  Layout,
+  SEO,
+  TextBody,
+  TextDate,
+} from '../components';
 
 const Hero = styled.div`
   margin-bottom: 20vh;

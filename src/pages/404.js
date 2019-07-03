@@ -2,12 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import Layout from '../components/Layout';
-import SEO from '../components/Seo';
-
-import HeadingPrimary from '../elements/HeadingPrimary';
-import TextBody from '../elements/TextBody';
-import Button from '../elements/Button';
+import { Button, HeadingPrimary, Layout, SEO, TextBody } from '../components';
 
 const Wrapper = styled.div`
   display: flex;

@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Footer from '../components/Footer';
-
-import GlobalStyles from '../elements/GlobalStyles';
+import { Footer, GlobalStyles } from '../components';
 
 const Wrapper = styled.div`
   padding: 0 var(--sides-padding-desktop);

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import FixedBar from '../elements/FixedBar';
+import { FixedBar } from '../components';
 
 import ArrowBack from '../images/arrow-back.svg';
 

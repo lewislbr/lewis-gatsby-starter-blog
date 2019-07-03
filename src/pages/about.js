@@ -3,13 +3,14 @@ import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
-import Layout from '../components/Layout';
-import SEO from '../components/Seo';
-import HeaderBack from '../components/HeaderBack';
-
-import HeadingPrimary from '../elements/HeadingPrimary';
-import TextBody from '../elements/TextBody';
-import Button from '../elements/Button';
+import {
+  Button,
+  HeaderBack,
+  HeadingPrimary,
+  Layout,
+  SEO,
+  TextBody,
+} from '../components';
 
 const ImgDiv = styled.div`
   margin: 0 5% 5vh 5%;

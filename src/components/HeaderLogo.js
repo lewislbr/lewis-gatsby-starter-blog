@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import FixedBar from '../elements/FixedBar';
+import { FixedBar } from '../components';
 
 const HeaderLogo = styled(FixedBar)`
   justify-content: space-between;

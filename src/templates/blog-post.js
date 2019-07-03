@@ -1,13 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/Layout';
-import HeaderBack from '../components/HeaderBack';
-import SEO from '../components/Seo';
-
-import HeadingPrimary from '../elements/HeadingPrimary';
-import TextBody from '../elements/TextBody';
-import TextDate from '../elements/TextDate';
+import {
+  HeaderBack,
+  HeadingPrimary,
+  Layout,
+  SEO,
+  TextBody,
+  TextDate,
+} from '../components';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
