@@ -6,10 +6,10 @@ export default styled.div`
   align-items: center;
   text-align: center;
   margin: 0 auto 5vh auto;
+  padding: 20px 50px;
 
-  width: 20vw;
+  width: auto;
   font-size: 26px;
-  line-height: 3;
   font-weight: bold;
   border-radius: 100px;
   border: 3px solid var(--primary-color);
@@ -25,8 +25,6 @@ export default styled.div`
   }
 
   @media (max-width: 849px) {
-    width: 60vw;
-    line-height: 2.7;
     font-size: 20px;
   }
 `;
