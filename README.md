@@ -76,7 +76,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 9. **`README.md`**: A text file containing useful reference information about your project.
 
-10. **`yarn.lock`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10. **`yarn.lock`** This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 <br>
 <br>
