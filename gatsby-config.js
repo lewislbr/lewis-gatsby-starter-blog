@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Lewis Gatsby Starter Blog`,
-    description: `A custom Gatsby starter template to start a new blog or personal website.`,
+    description: `A custom Gatsby starter template to start a blog or personal website.`,
     author: `Lewis Llobera`,
     twitter: `@lewislbr`,
     email: `billobera@gmail.com`,
