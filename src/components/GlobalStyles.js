@@ -56,7 +56,7 @@ export default createGlobalStyle`
 
   @font-face {
     font-family: "IBMPlexMono";
-    src: local('IBMPlexMono400'), url('${font.IBMPlexMono400}') format("woff2");
+    src: url('${font.IBMPlexMono400}') format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: block;
@@ -64,7 +64,7 @@ export default createGlobalStyle`
 
   @font-face {
     font-family: "IBMPlexMono";
-    src: local('IBMPlexMono700'), url('${font.IBMPlexMono700}') format("woff2");
+    src: url('${font.IBMPlexMono700}') format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display: block;
