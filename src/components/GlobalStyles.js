@@ -76,17 +76,17 @@ export default createGlobalStyle`
     --sides-padding-desktop: 3%;
     --sides-padding-mobile: 5%;
 
-    --background-color: hsl(0, 0%, 99%);
-    --background-color-translucent: hsla(0, 0%, 99%, 0.92);
-    --primary-color: hsl(0, 0%, 15%);
-    --primary-color-light: hsla(0, 0%, 15%, 0.9);
-    --primary-color-lighter: hsla(00, 0%, 15%, 0.7);
-    --secondary-color-a: hsl(351, 100%, 63%);
-    background-color: var(--background-color);
+    --light-color: hsl(0, 0%, 99%);
+    --light-color-translucent: hsla(0, 0%, 99%, 0.92);
+    --dark-color: hsl(0, 0%, 15%);
+    --dark-color-light: hsla(0, 0%, 15%, 0.9);
+    --dark-color-lighter: hsla(00, 0%, 15%, 0.7);
+    --action-color: hsl(339, 100%, 55%);
+    background-color: var(--light-color);
     font-family: 'IBMPlexMono', sans-serif;
     font-size: 19px;
     font-weight: 400;
-    color: var(--primary-color);
+    color: var(--dark-color);
 
     @media (max-width: 849px) {
       font-size: 17px;
