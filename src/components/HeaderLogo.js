@@ -20,7 +20,7 @@ const Logo = styled.p`
 function Header() {
   return (
     <HeaderLogo>
-      <Logo>Your Name</Logo>
+      <Logo>LGSB</Logo>
       <Link to="/about">
         <p>About</p>
       </Link>
