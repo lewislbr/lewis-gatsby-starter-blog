@@ -10,4 +10,4 @@ export default styled.h2`
   @media (max-width: 849px) {
     font-size: 30px;
   }
-  `;
+`;

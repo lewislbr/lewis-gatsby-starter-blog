@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export default styled.h1`
   display: block;
-  margin: 0 auto 5vh auto;
-  max-width: 25em;
-  font-size: 60px;
-  line-height: 1.1;
-  letter-spacing: -3px;
-  padding: 0 0 10px 0;
+  margin: 0 auto 10vh auto;
+  font-size: 80px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -4px;
 
   background: -webkit-linear-gradient(
     240deg,
