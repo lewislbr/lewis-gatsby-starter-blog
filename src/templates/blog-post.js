@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import {
   HeaderBack,
-  HeadingPrimary,
+  HeadingXL,
   Layout,
   SEO,
   TextBody,
@@ -18,7 +18,7 @@ export default ({ data }) => {
       <SEO title={post.frontmatter.title} />
       <HeaderBack />
       <Layout>
-        <HeadingPrimary>{post.frontmatter.title}</HeadingPrimary>
+        <HeadingXL>{post.frontmatter.title}</HeadingXL>
         <TextDate>{post.frontmatter.date}</TextDate>
         <TextBody dangerouslySetInnerHTML={{ __html: post.html }} />
       </Layout>
