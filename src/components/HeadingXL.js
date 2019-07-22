@@ -8,7 +8,6 @@ export default styled.h1`
   text-align: center;
   font-weight: 700;
   letter-spacing: -4px;
-
   background: -webkit-linear-gradient(
     240deg,
     hsl(189, 100%, 50%),
