@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-import { Button, HeadingPrimary, Layout, SEO, TextBody } from '../components';
+import { Button, HeadingXL, Layout, SEO, TextBody } from '../components';
 
 const Wrapper = styled.div`
   display: flex;
@@ -16,13 +16,13 @@ const ButtonCentered = styled(Button)`
   margin-top: 10vh;
 `;
 
-function NotFoundPage() {
+const NotFoundPage = () => {
   return (
     <>
       <SEO title="404: Not found" />
       <Layout>
         <Wrapper>
-          <HeadingPrimary>NOT FOUND</HeadingPrimary>
+          <HeadingXL>NOT FOUND</HeadingXL>
           <TextBody style={{ textAlign: 'center' }}>
             This page doesn&#39;t exist{' '}
             <span role="img" aria-label="duh">
@@ -36,6 +36,6 @@ function NotFoundPage() {
       </Layout>
     </>
   );
-}
+};
 
 export default NotFoundPage;

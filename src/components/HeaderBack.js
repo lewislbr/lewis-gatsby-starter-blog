@@ -16,7 +16,7 @@ const Icon = styled.div`
   }
 `;
 
-function Header() {
+const HeaderBack = () => {
   return (
     <FixedBar>
       <Link to="/">
@@ -26,6 +26,6 @@ function Header() {
       </Link>
     </FixedBar>
   );
-}
+};
 
-export default Header;
+export default HeaderBack;

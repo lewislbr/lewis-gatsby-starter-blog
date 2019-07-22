@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { LinkStd } from '../components';
+import { ButtonLink } from '../components';
 
-const FooterContainer = styled.footer`
+const Container = styled.footer`
   padding-top: 5vh;
   padding-bottom: 3vh;
-  margin-top: 10vh;
+  margin-top: 20vh;
   text-align: left;
-
   font-size: 17px;
 
   @media (max-width: 849px) {
@@ -16,20 +15,20 @@ const FooterContainer = styled.footer`
   }
 `;
 
-function Footer() {
+const Footer = () => {
   return (
-    <FooterContainer>
-      <LinkStd href="https://mobile.twitter.com/lewislbr" target="_blank">
+    <Container>
+      <ButtonLink href="https://mobile.twitter.com/lewislbr" target="_blank">
         Twitter
-      </LinkStd>
-      <LinkStd
+      </ButtonLink>
+      <ButtonLink
         href="https://github.com/lewislbr/lewis-gatsby-starter-blog"
         target="_blank"
       >
         Github
-      </LinkStd>
-    </FooterContainer>
+      </ButtonLink>
+    </Container>
   );
-}
+};
 
 export default Footer;

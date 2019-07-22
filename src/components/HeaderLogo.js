@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { FixedBar } from '../components';
 
-const HeaderLogo = styled(FixedBar)`
+const HeaderWrapper = styled(FixedBar)`
   justify-content: space-between;
 `;
 
@@ -17,15 +17,15 @@ const Logo = styled.p`
   }
 `;
 
-function Header() {
+const HeaderLogo = () => {
   return (
-    <HeaderLogo>
+    <HeaderWrapper>
       <Logo>LGSB</Logo>
       <Link to="/about">
         <p>About</p>
       </Link>
-    </HeaderLogo>
+    </HeaderWrapper>
   );
-}
+};
 
-export default Header;
+export default HeaderLogo;

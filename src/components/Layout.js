@@ -24,7 +24,7 @@ const Content = styled.main`
   }
 `;
 
-function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -47,7 +47,7 @@ function Layout({ children }) {
       )}
     />
   );
-}
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
