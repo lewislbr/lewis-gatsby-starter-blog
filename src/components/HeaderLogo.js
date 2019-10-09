@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import { FixedBar } from '../components';
+import { BREAKPOINT } from '../utils/constants';
 
 const HeaderWrapper = styled(FixedBar)`
   justify-content: space-between;
@@ -12,12 +13,12 @@ const Logo = styled.p`
   font-size: 32px;
   font-weight: 700;
 
-  @media (max-width: 849px) {
+  @media (max-width: ${BREAKPOINT}px) {
     font-size: 28px;
   }
 `;
 
-const HeaderLogo = () => {
+export const HeaderLogo = () => {
   return (
     <HeaderWrapper>
       <Logo>LGSB</Logo>
@@ -27,5 +28,3 @@ const HeaderLogo = () => {
     </HeaderWrapper>
   );
 };
-
-export default HeaderLogo;

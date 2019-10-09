@@ -1,22 +1,23 @@
 import styled from 'styled-components';
 
-export default styled.header`
+import { BREAKPOINT } from '../utils/constants';
+
+export const FixedBar = styled.header`
+  align-items: center;
+  backdrop-filter: blur(4px);
+  background-color: var(--light-color-translucent);
   display: flex;
   flex-direction: row;
-  align-items: center;
-  position: fixed;
-  left: auto;
-  right: auto;
-  z-index: 999;
   height: 8vh;
-  width: 100%;
+  left: auto;
   padding: 0 var(--sides-padding-desktop);
+  position: fixed;
+  right: auto;
   top: 0px;
-  background-color: var(--light-color-translucent);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  width: 100%;
+  z-index: 999;
 
-  @media (max-width: 849px) {
+  @media (max-width: ${BREAKPOINT}px) {
     padding: 0 var(--sides-padding-mobile);
   }
 `;

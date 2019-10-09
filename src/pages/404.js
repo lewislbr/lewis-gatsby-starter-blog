@@ -6,8 +6,8 @@ import { Button, HeadingXL, Layout, SEO, TextBody } from '../components';
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 `;
 
 const ButtonCentered = styled(Button)`

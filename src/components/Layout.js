@@ -4,27 +4,28 @@ import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import { Footer, GlobalStyles } from '../components';
+import { BREAKPOINT } from '../utils/constants';
 
 const Wrapper = styled.div`
-  padding: 0 var(--sides-padding-desktop);
   margin: 0 auto;
   max-width: 1400px;
+  padding: 0 var(--sides-padding-desktop);
 
-  @media (max-width: 849px) {
+  @media (max-width: ${BREAKPOINT}px) {
     padding: 0 var(--sides-padding-mobile);
   }
 `;
 
 const Content = styled.main`
-  max-width: 900px;
   margin: 0 auto;
+  max-width: 900px;
 
-  @media (max-width: 849px) {
+  @media (max-width: ${BREAKPOINT}px) {
     width: 100%;
   }
 `;
 
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -52,5 +53,3 @@ const Layout = ({ children }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
-
-export default Layout;

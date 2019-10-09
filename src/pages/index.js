@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 
+import { BREAKPOINT } from '../utils/constants';
+
 import {
   HeaderLogo,
   HeadingXL,
@@ -15,25 +17,25 @@ import {
 const Hero = styled.div`
   margin-bottom: 20vh;
 
-  @media (max-width: 849px) {
+  @media (max-width: ${BREAKPOINT}px) {
     margin-bottom: 15vh;
   }
 `;
 
 const TextHome = styled.p`
+  color: var(--dark-color-light);
   display: block;
-  max-width: 28em;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10vh;
-
   font-size: 22px;
   line-height: 1.6;
-  color: var(--dark-color-light);
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 28em;
+  text-align: center;
 
-  @media (max-width: 849px) {
+  @media (max-width: ${BREAKPOINT}px) {
     font-size: 19px;
+    margin-bottom: 7vh;
   }
 `;
 
@@ -41,7 +43,7 @@ const Post = styled.div`
   border-bottom: 1px solid lightgray;
   margin-bottom: 50px;
 
-  @media (max-width: 849px) {
+  @media (max-width: ${BREAKPOINT}px) {
     padding-left: 0;
   }
 `;
@@ -60,8 +62,8 @@ const Home = ({ data }) => {
           </TextHome>
         </Hero>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <Link to={node.fields.slug}>
-            <Post key={node.id}>
+          <Link to={node.fields.slug} key={node.id}>
+            <Post>
               <HeadingL>{node.frontmatter.title}</HeadingL>
               <TextBody>{node.excerpt}</TextBody>
               <TextDate>{node.frontmatter.date}</TextDate>

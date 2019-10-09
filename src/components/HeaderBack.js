@@ -3,29 +3,27 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import { FixedBar } from '../components';
-
+import { BREAKPOINT } from '../utils/constants';
 import ArrowBack from '../images/arrow-back.svg';
 
-const Icon = styled.div`
+const Icon = styled.img`
   height: 34px;
+  max-width: 100%;
+  max-height: 100%;
   width: 34px;
 
-  @media (max-width: 849px) {
+  @media (max-width: ${BREAKPOINT}px) {
     height: 28px;
     width: 28px;
   }
 `;
 
-const HeaderBack = () => {
+export const HeaderBack = () => {
   return (
     <FixedBar>
       <Link to="/">
-        <Icon>
-          <img src={ArrowBack} alt="Back" />
-        </Icon>
+        <Icon src={ArrowBack} alt="Back" />
       </Link>
     </FixedBar>
   );
 };
-
-export default HeaderBack;

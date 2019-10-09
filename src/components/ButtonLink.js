@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export default styled.a`
+export const ButtonLink = styled.a`
   margin-right: 5vw;
 `;
