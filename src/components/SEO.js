@@ -30,7 +30,7 @@ export const SEO = ({ title }) => {
         },
         {
           property: `og:title`,
-          content: data.site.siteMetadata.title,
+          content: title,
         },
         {
           property: `og:description`,
@@ -38,7 +38,7 @@ export const SEO = ({ title }) => {
         },
         {
           name: `twitter:title`,
-          content: data.site.siteMetadata.title,
+          content: title,
         },
         {
           name: `twitter:description`,
