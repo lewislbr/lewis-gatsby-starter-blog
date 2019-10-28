@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import { Footer, GlobalStyles } from '../components';
@@ -27,26 +26,13 @@ const Content = styled.main`
 
 export const Layout = ({ children }) => {
   return (
-    <StaticQuery
-      query={graphql`
-        query SiteTitleQuery {
-          site {
-            siteMetadata {
-              title
-            }
-          }
-        }
-      `}
-      render={data => (
-        <>
-          <GlobalStyles />
-          <Wrapper>
-            <Content>{children}</Content>
-            <Footer />
-          </Wrapper>
-        </>
-      )}
-    />
+    <>
+      <GlobalStyles />
+      <Wrapper>
+        <Content>{children}</Content>
+        <Footer />
+      </Wrapper>
+    </>
   );
 };
 
