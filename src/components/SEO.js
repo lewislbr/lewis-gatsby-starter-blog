@@ -1,79 +1,55 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-export const SEO = ({ lang, title, description }) => {
-  const { site } = useStaticQuery(
+import { GatsbyIcon } from '../assets/icons';
+
+export const SEO = ({ title }) => {
+  const data = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
-            author
           }
         }
       }
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
-
   return (
     <Helmet
-      htmlAttributes={{
-        lang,
-      }}
+      htmlAttributes={{ lang: `en` }}
       title={title}
-      titleTemplate={`%s ― ${site.siteMetadata.title}`}
+      titleTemplate={`%s ― ${data.site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: data.site.siteMetadata.description,
         },
         {
           property: `og:title`,
-          content: title,
+          content: data.site.siteMetadata.title,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: data.site.siteMetadata.description,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          name: `twitter:title`,
+          content: data.site.siteMetadata.title,
+        },
+        {
+          name: `twitter:description`,
+          content: data.site.siteMetadata.description,
         },
         {
           name: `twitter:card`,
           content: `summary`,
         },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
       ]}
+      link={[{ rel: 'icon', type: 'image/png', href: `${GatsbyIcon}` }]}
     />
   );
-};
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-};
-
-SEO.propTypes = {
-  lang: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  description: PropTypes.string,
 };
