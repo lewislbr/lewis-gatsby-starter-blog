@@ -5,7 +5,7 @@ module.exports = {
     author: `Lewis Llobera`,
     twitter: `@lewislbr`,
     email: `billobera@gmail.com`,
-    siteUrl: `https://lewis-gatsby-starter-blog.firebaseapp.com/`,
+    siteUrl: `https://lewis-gatsby-starter-blog.netlify.com`,
     gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-blog`,
   },
   plugins: [
