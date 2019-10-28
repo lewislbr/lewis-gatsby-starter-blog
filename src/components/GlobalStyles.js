@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import * as font from '../fonts';
+import * as font from '../assets/fonts';
 import { BREAKPOINT } from '../utils/constants';
 
 export const GlobalStyles = createGlobalStyle`

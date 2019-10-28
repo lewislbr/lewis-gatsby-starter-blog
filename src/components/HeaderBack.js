@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { FixedBar } from '../components';
 import { BREAKPOINT } from '../utils/constants';
-import ArrowBack from '../images/arrow-back.svg';
+import { ArrowBack } from '../assets/icons';
 
 const Icon = styled.img`
   height: 34px;

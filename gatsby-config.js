@@ -6,7 +6,7 @@ module.exports = {
     twitter: `@lewislbr`,
     email: `billobera@gmail.com`,
     siteUrl: `https://lewis-gatsby-starter-blog.firebaseapp.com/`,
-    gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-blog`
+    gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-blog`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,7 +14,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     {
