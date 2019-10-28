@@ -50,17 +50,6 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Lewis Gatsby Starter Blog`,
-        short_name: `LGSB`,
-        start_url: `/`,
-        background_color: `#fcfcfc`,
-        theme_color: `#fcfcfc`,
-        display: `standalone`,
-      },
-    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sitemap`,
