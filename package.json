@@ -1,12 +1,10 @@
 {
   "name": "lewis-gatsby-starter-blog",
   "description": "A custom Gatsby starter template to start a blog or personal website.",
+  "author": "@lewislbr",
   "repository": {
     "type": "git",
     "url": "https://github.com/lewislbr/lewis-gatsby-starter-blog"
-  },
-  "bugs": {
-    "url": "https://github.com/lewislbr/lewis-gatsby-starter-blog/issues"
   },
   "version": "0.1.0",
   "license": "MIT",
@@ -39,8 +37,6 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "serve": "gatsby serve"
   }
 }

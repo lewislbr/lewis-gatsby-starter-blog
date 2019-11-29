@@ -2,26 +2,22 @@ module.exports = {
   siteMetadata: {
     title: `Lewis Gatsby Starter Blog`,
     description: `A custom Gatsby starter template to start a blog or personal website.`,
-    author: `Lewis Llobera`,
-    twitter: `@lewislbr`,
-    email: `billobera@gmail.com`,
     siteUrl: `https://lewis-gatsby-starter-blog.netlify.com`,
-    gitUrl: `https://github.com/lewislbr/lewis-gatsby-starter-blog`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     `gatsby-plugin-catch-links`,
