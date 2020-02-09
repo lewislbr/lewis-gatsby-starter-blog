@@ -36,7 +36,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "prettier --write --check \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}\"",
     "serve": "gatsby serve"
   }
 }
