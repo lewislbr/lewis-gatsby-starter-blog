@@ -27,7 +27,7 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  `).then(result => {
+  `).then((result) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,

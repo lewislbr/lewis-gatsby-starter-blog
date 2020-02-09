@@ -1,4 +1,3 @@
-
 <h1 align="center">
   Lewis Gatsby Starter Blog
 </h1>
@@ -72,9 +71,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 7.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-8. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+8.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-9. **`README.md`**: A text file containing useful reference information about your project.
+9.  **`README.md`**: A text file containing useful reference information about your project.
 
 10. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
