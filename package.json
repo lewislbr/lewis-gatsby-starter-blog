@@ -31,11 +31,15 @@
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "prettier": "^1.19.1"
   },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx}\"",
     "format": "prettier --write --check \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}\"",
     "serve": "gatsby serve"
   }
