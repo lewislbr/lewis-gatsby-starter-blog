@@ -10,7 +10,7 @@ import {
   TextDate,
 } from '../components';
 
-export default ({ data }) => {
+const BlogPost = ({ data }) => {
   const post = data.markdownRemark;
 
   return (
@@ -25,6 +25,8 @@ export default ({ data }) => {
     </>
   );
 };
+
+export default BlogPost;
 
 export const query = graphql`
   query($slug: String!) {

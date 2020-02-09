@@ -9,6 +9,13 @@
   "version": "0.1.0",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx}\"",
+    "format": "prettier --write --check \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}\"",
+    "serve": "gatsby serve"
+  },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.12",
@@ -35,12 +42,5 @@
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0",
     "prettier": "^1.19.1"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx}\"",
-    "format": "prettier --write --check \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}\"",
-    "serve": "gatsby serve"
   }
 }
