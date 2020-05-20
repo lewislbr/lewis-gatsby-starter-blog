@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { BREAKPOINT } from '../utils/constants';
 
-export const TextBody = styled.p`
+export const TextBody = styled.div`
   color: var(--dark-color-light);
   display: block;
   letter-spacing: -0.003em;
