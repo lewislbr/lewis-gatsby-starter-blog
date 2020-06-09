@@ -7,7 +7,7 @@
 
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-Additionally, it has [ESLint](https://eslint.org/) to lint JavaScript and React, [Prettier](https://prettier.io/) to format code according to a specified set of rules, [Husky](https://github.com/typicode/husky) to automate the process before each commit, and [lint-staged](https://github.com/okonet/lint-staged) to auto-apply any linting and formatting to staged files ready to be commited.
+Additionally, it has [ESLint](https://eslint.org/) to lint JavaScript and React, and [Prettier](https://prettier.io/) to format code according to a specified set of rules.
 
 <br>
 <br>
@@ -50,25 +50,24 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     .
     ├── node_modules
     ├── src
-    ├── .eslintrc.json
+    ├── .eslintrc
     ├── .gitignore
-    ├── .prettierrc.json
+    ├── .prettierrc
     ├── gatsby-config.js
     ├── gatsby-node.js
     ├── LICENSE
     ├── package.json
-    ├── README.md
-    └── yarn.lock
+    └── README.md
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-3.  **`.eslintrc.json`**: A configuration file for [ESLint](https://eslint.org), a linting utility for JavaScript and React.
+3.  **`.eslintrc`**: A configuration file for [ESLint](https://eslint.org), a linting utility for JavaScript and React.
 
 4.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-5.  **`.prettierrc.json`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+5.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
 6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
@@ -79,8 +78,6 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 9.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
 10. **`README.md`**: A text file containing useful reference information about your project.
-
-11. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 <br>
 <br>

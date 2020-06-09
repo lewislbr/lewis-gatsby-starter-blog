@@ -12,50 +12,35 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "lint": "./node_modules/.bin/eslint \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx}\"",
-    "format": "prettier --write --check \"{,!(.cache|node_modules|public)/**/}*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}\"",
+    "lint": "eslint --ext .js,.jsx .",
+    "format": "prettier --write --check \"!.cache\" \"!public\" .",
     "serve": "gatsby serve"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "yarn lint"
-    ],
-    "*.{js,jsx,ts,tsx,html,css,json,md,yaml,yml,graphql}": [
-      "yarn format"
-    ]
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.19.12",
-    "gatsby-image": "^2.2.40",
-    "gatsby-plugin-catch-links": "^2.1.25",
-    "gatsby-plugin-offline": "^3.0.34",
-    "gatsby-plugin-react-helmet": "^3.1.22",
-    "gatsby-plugin-robots-txt": "^1.5.0",
-    "gatsby-plugin-sharp": "^2.4.5",
-    "gatsby-plugin-sitemap": "^2.2.27",
-    "gatsby-plugin-styled-components": "^3.1.19",
-    "gatsby-remark-images": "^3.1.44",
-    "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.6.50",
-    "gatsby-transformer-sharp": "^2.3.14",
+    "gatsby": "^2.23.3",
+    "gatsby-image": "^2.4.7",
+    "gatsby-plugin-catch-links": "^2.3.5",
+    "gatsby-plugin-offline": "^3.2.9",
+    "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-robots-txt": "^1.5.1",
+    "gatsby-plugin-sharp": "^2.6.11",
+    "gatsby-plugin-sitemap": "^2.4.5",
+    "gatsby-plugin-styled-components": "^3.3.4",
+    "gatsby-remark-images": "^3.3.10",
+    "gatsby-source-filesystem": "^2.3.11",
+    "gatsby-transformer-remark": "^2.8.15",
+    "gatsby-transformer-sharp": "^2.5.5",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^5.0.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^2.3.0",
-    "husky": "^4.2.1",
-    "lint-staged": "^10.0.7",
-    "prettier": "^1.19.1"
+    "eslint": "^7.2.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "prettier": "^2.0.5"
   }
 }
