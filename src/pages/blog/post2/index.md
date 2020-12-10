@@ -1,6 +1,6 @@
 ---
-title: 'Whole every miles as tiled at seven'
-date: '2019-03-22'
+title: "Whole every miles as tiled at seven"
+date: "2019-03-22"
 ---
 
 Her old collecting she considered discovered. So at parties he warrant oh staying. Square new horses and put better end. Sincerity collected happiness do is contented. Sigh ever way now many. Alteration you any nor unsatiable diminution reasonable companions shy partiality. Leaf by left deal mile oh if easy. Added woman first get led joy not early jokes.

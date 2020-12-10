@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-
-import { BREAKPOINT } from '../utils/constants';
+import styled from "styled-components"
+import {BREAKPOINT} from "../utils/constants"
 
 export const HeadingXL = styled.h1`
   background: -webkit-linear-gradient(
@@ -23,4 +22,4 @@ export const HeadingXL = styled.h1`
   @media (max-width: ${BREAKPOINT}px) {
     font-size: 45px;
   }
-`;
+`

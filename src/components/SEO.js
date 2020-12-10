@@ -1,10 +1,9 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from "react"
+import Helmet from "react-helmet"
+import {useStaticQuery, graphql} from "gatsby"
+import {GatsbyIcon} from "../assets/icons"
 
-import { GatsbyIcon } from '../assets/icons';
-
-export const SEO = ({ title }) => {
+export function SEO({title}) {
   const data = useStaticQuery(
     graphql`
       query {
@@ -16,11 +15,11 @@ export const SEO = ({ title }) => {
         }
       }
     `,
-  );
+  )
 
   return (
     <Helmet
-      htmlAttributes={{ lang: `en` }}
+      htmlAttributes={{lang: `en`}}
       title={title}
       titleTemplate={`%s ― ${data.site.siteMetadata.title}`}
       meta={[
@@ -49,7 +48,7 @@ export const SEO = ({ title }) => {
           content: `summary`,
         },
       ]}
-      link={[{ rel: 'icon', type: 'image/png', href: `${GatsbyIcon}` }]}
+      link={[{rel: "icon", type: "image/png", href: `${GatsbyIcon}`}]}
     />
-  );
-};
+  )
+}

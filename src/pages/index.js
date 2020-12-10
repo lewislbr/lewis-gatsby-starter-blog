@@ -1,9 +1,6 @@
-import React from 'react';
-import { Link, graphql } from 'gatsby';
-import styled from 'styled-components';
-
-import { BREAKPOINT } from '../utils/constants';
-
+import React from "react"
+import {Link, graphql} from "gatsby"
+import styled from "styled-components"
 import {
   HeaderLogo,
   HeadingXL,
@@ -12,7 +9,8 @@ import {
   SEO,
   TextBody,
   TextDate,
-} from '../components';
+} from "../components"
+import {BREAKPOINT} from "../utils/constants"
 
 const Hero = styled.div`
   margin-bottom: 20vh;
@@ -20,8 +18,7 @@ const Hero = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     margin-bottom: 15vh;
   }
-`;
-
+`
 const TextHome = styled.p`
   color: var(--dark-color-light);
   display: block;
@@ -37,8 +34,7 @@ const TextHome = styled.p`
     font-size: 19px;
     margin-bottom: 7vh;
   }
-`;
-
+`
 const Post = styled.div`
   border-bottom: 1px solid lightgray;
   margin-bottom: 50px;
@@ -46,9 +42,9 @@ const Post = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     padding-left: 0;
   }
-`;
+`
 
-const Home = ({ data }) => {
+export default function Home({data}) {
   return (
     <>
       <SEO title="Blog" />
@@ -61,7 +57,7 @@ const Home = ({ data }) => {
             personal website.
           </TextHome>
         </Hero>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
+        {data.allMarkdownRemark.edges.map(({node}) => (
           <Link to={node.fields.slug} key={node.id}>
             <Post>
               <HeadingL>{node.frontmatter.title}</HeadingL>
@@ -72,14 +68,12 @@ const Home = ({ data }) => {
         ))}
       </Layout>
     </>
-  );
-};
+  )
+}
 
-export default Home;
-
-export const query = graphql`
+export const data = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
       edges {
         node {
           id
@@ -95,4 +89,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

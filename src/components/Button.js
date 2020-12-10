@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-
-import { BREAKPOINT } from '../utils/constants';
+import styled from "styled-components"
+import {BREAKPOINT} from "../utils/constants"
 
 export const Button = styled.a`
   align-items: center;
@@ -24,4 +23,4 @@ export const Button = styled.a`
   @media (max-width: ${BREAKPOINT}px) {
     font-size: 20px;
   }
-`;
+`

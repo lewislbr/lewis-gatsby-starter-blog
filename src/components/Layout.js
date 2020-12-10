@@ -1,9 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
-import { Footer, GlobalStyles } from '../components';
-import { BREAKPOINT } from '../utils/constants';
+import React from "react"
+import styled from "styled-components"
+import {Footer, GlobalStyles} from "../components"
+import {BREAKPOINT} from "../utils/constants"
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -13,7 +11,7 @@ const Wrapper = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     padding: 0 var(--sides-padding-mobile);
   }
-`;
+`
 
 const Content = styled.main`
   margin: 0 auto;
@@ -22,9 +20,9 @@ const Content = styled.main`
   @media (max-width: ${BREAKPOINT}px) {
     width: 100%;
   }
-`;
+`
 
-export const Layout = ({ children }) => {
+export function Layout({children}) {
   return (
     <>
       <GlobalStyles />
@@ -33,9 +31,5 @@ export const Layout = ({ children }) => {
         <Footer />
       </Wrapper>
     </>
-  );
-};
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+  )
+}

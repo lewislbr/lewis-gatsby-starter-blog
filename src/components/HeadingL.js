@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-
-import { BREAKPOINT } from '../utils/constants';
+import styled from "styled-components"
+import {BREAKPOINT} from "../utils/constants"
 
 export const HeadingL = styled.h2`
   display: block;
@@ -12,4 +11,4 @@ export const HeadingL = styled.h2`
   @media (max-width: ${BREAKPOINT}px) {
     font-size: 30px;
   }
-`;
+`

@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-
-import { BREAKPOINT } from '../utils/constants';
+import styled from "styled-components"
+import {BREAKPOINT} from "../utils/constants"
 
 export const FixedBar = styled.header`
   align-items: center;
@@ -20,4 +19,4 @@ export const FixedBar = styled.header`
   @media (max-width: ${BREAKPOINT}px) {
     padding: 0 var(--sides-padding-mobile);
   }
-`;
+`

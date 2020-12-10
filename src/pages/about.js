@@ -1,6 +1,5 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-
+import React from "react"
+import {graphql} from "gatsby"
 import {
   Button,
   HeaderBack,
@@ -9,9 +8,9 @@ import {
   Layout,
   SEO,
   TextBody,
-} from '../components';
+} from "../components"
 
-const About = ({ data }) => {
+export default function About({data}) {
   return (
     <>
       <SEO title="About" />
@@ -37,14 +36,12 @@ const About = ({ data }) => {
         <Button href="mailto:your&#64;email.com">Get in touch</Button>
       </Layout>
     </>
-  );
-};
+  )
+}
 
-export default About;
-
-export const query = graphql`
+export const data = graphql`
   query {
-    RandomPhoto: file(relativePath: { eq: "assets/images/RandomPhoto.jpg" }) {
+    RandomPhoto: file(relativePath: {eq: "assets/images/RandomPhoto.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 1400) {
           ...GatsbyImageSharpFluid_withWebp
@@ -52,4 +49,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

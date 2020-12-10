@@ -1,8 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-
-import { ButtonLink } from '../components';
-import { BREAKPOINT } from '../utils/constants';
+import React from "react"
+import styled from "styled-components"
+import {ButtonLink} from "../components"
+import {BREAKPOINT} from "../utils/constants"
 
 const Container = styled.footer`
   font-size: 17px;
@@ -14,9 +13,9 @@ const Container = styled.footer`
   @media (max-width: ${BREAKPOINT}px) {
     font-size: 16px;
   }
-`;
+`
 
-export const Footer = () => {
+export function Footer() {
   return (
     <Container>
       <ButtonLink
@@ -34,5 +33,5 @@ export const Footer = () => {
         Github
       </ButtonLink>
     </Container>
-  );
-};
+  )
+}

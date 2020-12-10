@@ -1,6 +1,5 @@
-import styled from 'styled-components';
-
-import { BREAKPOINT } from '../utils/constants';
+import styled from "styled-components"
+import {BREAKPOINT} from "../utils/constants"
 
 export const TextBody = styled.div`
   color: var(--dark-color-light);
@@ -12,4 +11,4 @@ export const TextBody = styled.div`
   @media (max-width: ${BREAKPOINT}px) {
     margin: 0 0 5vh 0;
   }
-`;
+`
